@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.ActiveMenu = "Home"; //The menu item will be active for this page.
+}
+<div>
+    <div class="row">
+        <div class="col-md-4">
+            @Html.Partial("LineChartPartial")
+        </div>
+        <div class="col-md-4">
+            @Html.Partial("ColumnChartPartial")
+        </div>
+        <div class="col-md-4">
+            @Html.Partial("TimeSeriesChartPartial")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            @Html.Partial("PieChartPartial")
+        </div>
+        <div class="col-md-4">
+            @Html.Partial("StackedBarChartPartial")
+        </div>
+        <div class="col-md-4">
+            @Html.Partial("TimeSeriesChartPartial")
+        </div>
+    </div>
+</div>
